@@ -1,0 +1,10 @@
+{
+  "data_collected": false,
+  "tracking": false,
+  "third_party_analytics": false,
+  "account_required": false,
+  "basis": "User audio and transcripts stay on device; no network transcription or telemetry SDK. User-directed sharing sends only selected content to the selected destination. Reassess if purchases or analytics are added.",
+  "privacy_policy_url": "https://github.com/buzagloidan/mila/blob/main/PRIVACY.md",
+  "published": true,
+  "approved_by_owner": "2026-10-18"
+}

@@ -1,0 +1,114 @@
+name: HebrewVoice
+options:
+  bundleIdPrefix: com.hebrewvoice
+  deploymentTarget:
+    iOS: '17.0'
+  developmentLanguage: he
+  knownRegions: [he, en, Base]
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    TARGETED_DEVICE_FAMILY: '1,2'
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ZADSZ6HP53
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+targets:
+  HebrewVoice:
+    type: application
+    platform: iOS
+    sources:
+      - path: HebrewVoice
+        excludes: [Resources]
+      - path: HebrewVoice/Resources/Model
+        type: folder
+        buildPhase: resources
+      - path: HebrewVoice/Resources/Licenses
+        type: folder
+        buildPhase: resources
+      - path: HebrewVoice/Resources/sample-hebrew.wav
+      - path: HebrewVoice/Resources/PrivacyInfo.xcprivacy
+      - path: HebrewVoice/Resources/Assets.xcassets
+      - path: Shared
+    info:
+      path: HebrewVoice/Info.plist
+      properties:
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleDisplayName: מילה
+        CFBundleDevelopmentRegion: he
+        CFBundleLocalizations: [he]
+        NSMicrophoneUsageDescription: המיקרופון משמש להקלטה ולתמלול בעברית במכשיר שלך בלבד.
+        UIBackgroundModes: [audio]
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        ITSAppUsesNonExemptEncryption: false
+        NSSupportsLiveActivities: true
+        LSSupportsOpeningDocumentsInPlace: false
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: Hebrew Voice Audio
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes: [public.audio, public.mpeg-4-audio, public.mp3, com.microsoft.waveform-audio, public.aiff-audio]
+        CFBundleURLTypes:
+          - CFBundleURLName: com.hebrewvoice.mila.recording
+            CFBundleURLSchemes: [mila]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hebrewvoice.mila
+        MARKETING_VERSION: '1.0'
+        CURRENT_PROJECT_VERSION: 2
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_IDENTITY: iPhone Developer
+        CODE_SIGN_ENTITLEMENTS: HebrewVoice/HebrewVoice.entitlements
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited) MILA_APP
+    dependencies:
+      - framework: Vendor/sherpa-onnx.xcframework
+        embed: false
+      - framework: Vendor/onnxruntime.xcframework
+        embed: false
+      - sdk: libc++.tbd
+      - sdk: libiconv.tbd
+      - sdk: Accelerate.framework
+      - sdk: CoreML.framework
+      - target: MilaActivity
+        embed: true
+  MilaActivity:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: MilaActivity
+      - path: Shared/RecordingActivityAttributes.swift
+      - path: Shared/StopRecordingIntent.swift
+    info:
+      path: MilaActivity/Info.plist
+      properties:
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleDisplayName: מילה · הקלטה
+        CFBundleLocalizations: [he]
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hebrewvoice.mila.activity
+        MARKETING_VERSION: '1.0'
+        CURRENT_PROJECT_VERSION: 2
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+  HebrewVoiceTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [HebrewVoiceTests]
+    dependencies:
+      - target: HebrewVoice
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  HebrewVoice:
+    build:
+      targets:
+        HebrewVoice: all
+    test:
+      targets: [HebrewVoiceTests]

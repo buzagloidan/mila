@@ -1,0 +1,25 @@
+Mila is a Hebrew-language, right-to-left, on-device speech transcription app. No login, demo credentials, subscription, or server is required. The unchanged quantized Hebrew Zipformer2 model and native runtime are bundled in the app. It works in Airplane Mode.
+
+TEST WITHOUT MICROPHONE
+1. Launch the app and tap the sliders icon (הגדרות ופרטיות).
+2. Tap תמלול קטע הדוגמה הכלול.
+3. The bundled licensed Hebrew sample should produce שלום. ("Hello"). This demo does not save a library item.
+
+MICROPHONE RECORDING
+1. Return Home and select הקלטה חדשה.
+2. Optionally enter a title, then select התחלת הקלטה and allow microphone access.
+3. Speak Hebrew. The transcript updates during recording.
+4. Select סיום ושמירה to finish. The saved transcript is available in the local library.
+5. Background audio mode supports an ongoing user-initiated microphone recording while locked. It is not used to keep file inference alive indefinitely. A local recording Live Activity offers elapsed time and stop/save when enabled.
+
+AUDIO IMPORT
+Use ייבוא קובץ שמע for a supported M4A/WAV, or open an audio document in Mila from a compatible system share sheet. Opening a document starts transcription automatically. File processing is foreground work with only the system background grace period. Failed/cancelled imports keep their staged source for retry or deletion.
+
+SHORTCUTS
+The three actions are תמלול קובץ שמע (audio input / text output), התחלת הקלטה, and פתיחת התמלול האחרון. They foreground the app.
+
+PRIVACY AND CONTENT
+No collected user data or tracking. Audio/text remain on device; users may explicitly export/share to another destination. The app has no public user-generated-content feed. Licenses/attribution for the model, sherpa-onnx, ONNX Runtime and CC0 sample are available in Settings. Recognition may contain errors; no summarization, speaker identification or punctuation model is included.
+
+BUILD 2 UPDATE
+Adds Apple’s native StoreKit review request after a completed transcript is viewed and the user returns to the library. Eligibility requires three completed, nonempty transcripts on two local calendar days. A two-second delay avoids interrupting active work, and attempts are limited to once per app version with a 90-day cooldown. Eligibility uses the existing local library; only the last attempt date/version are stored locally. No analytics or data collection was added. Settings also includes a direct App Store rating link.

@@ -1,0 +1,33 @@
+{
+  "model_revision": "6c07526ebfdfc71d12ed4ce6aaebe32774a2613a",
+  "model": {
+    "encoder.int8.onnx": {
+      "sha256": "6c6febcb74a09435315a1d872a6539f6e7fc2c333533f14c74edc0e85c49ffcd"
+    },
+    "decoder.int8.onnx": {
+      "sha256": "feb03e7c8aa761593a9284a6fa1e91259be3702de75f630062256c1a59c5a906"
+    },
+    "joiner.int8.onnx": {
+      "sha256": "1d2c6d8e6dabc5eb52de52e95718e9bdfbffbfe7ead3808fb5ffd74e83bd9cae"
+    },
+    "tokens.txt": {
+      "sha256": "e4ebb5e72a6aeef47437a55fa2308ebbedb7c51c557de7a89bf965c23ea9af4a"
+    }
+  },
+  "frameworks": [
+    {
+      "directory": "sherpa-onnx.xcframework",
+      "url": "https://github.com/buzagloidan/mila/releases/download/v1.0.0-build.2/sherpa-onnx.xcframework.zip",
+      "sha256": "a808329c49da521b3af707da2e1a9d5b0a4595b2549ffdc771f2f560f012fd3d",
+      "upstream_url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/xcframework/sherpa-onnx-v1.13.7-ios-static.xcframework.zip"
+    },
+    {
+      "directory": "onnxruntime.xcframework",
+      "url": "https://github.com/buzagloidan/mila/releases/download/v1.0.0-build.2/onnxruntime.xcframework.zip",
+      "sha256": "992d8a0cc6014cccc3a7815c36bbff5e5a06833ea2c4d47dd43ef071f639cf9d",
+      "upstream_url": "https://github.com/csukuangfj/onnxruntime-libs/releases/download/v1.28.1/onnxruntime-ios-static-xcframework-1.28.1.xcframework.zip"
+    }
+  ],
+  "model_base_url": "https://github.com/buzagloidan/mila/releases/download/v1.0.0-build.2",
+  "model_upstream_base_url": "https://huggingface.co/thewh1teagle/zipformer2-66m-streaming-he/resolve/6c07526ebfdfc71d12ed4ce6aaebe32774a2613a/sherpa-onnx"
+}

@@ -1,0 +1,11 @@
+{
+  "title": "שלום (shalom)",
+  "speaker": "YaronSh",
+  "project": "Lingua Libre / Wikimedia Commons",
+  "source": "https://commons.wikimedia.org/wiki/File:LL-Q9288_(heb)-YaronSh-%D7%A9%D7%9C%D7%95%D7%9D.wav",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/96/LL-Q9288_%28heb%29-YaronSh-%D7%A9%D7%9C%D7%95%D7%9D.wav",
+  "original_sha1": "af61138c1144462aa7cd36cda815020df73d3f34",
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "changes": "Resampled to 16 kHz mono PCM; 0.5 seconds leading and 1.5 seconds trailing silence added."
+}

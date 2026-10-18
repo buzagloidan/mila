@@ -4,7 +4,7 @@
 
 מפעיל האפליקציה: **Idan Buzaglo**.
 
-לתמיכה ולשאלות פרטיות: **buzagloidan@gmail.com**. אפשר גם [לפתוח דיווח](https://github.com/buzagloidan/mila-support/issues). אין לפרסם בדיווח ציבורי הקלטות, תמלולים או מידע אישי.
+לתמיכה ולשאלות פרטיות: **buzagloidan@gmail.com**. אפשר גם [לפתוח דיווח](https://github.com/buzagloidan/mila/issues). אין לפרסם בדיווח ציבורי הקלטות, תמלולים או מידע אישי.
 
 ## איך מתחילים?
 

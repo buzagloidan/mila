@@ -1,0 +1,24 @@
+Listen now. Read later.
+Mila turns Hebrew meetings, lectures and recordings into text on your iPhone and iPad, including when you are offline. The app interface is in Hebrew and designed from right to left.
+
+READY TO TRANSCRIBE
+The recognition model is included in the app. No account, first-launch model download or transcription server is required.
+
+RECORD AND FOLLOW THE WORDS
+Watch the transcript update while recording. Text saves automatically, and microphone recording can continue with the screen locked.
+
+OPEN EXISTING AUDIO
+Open a supported audio file in Mila to start transcription automatically, or import it using the Files picker. Sharing availability depends on the sending app and audio format.
+
+KEEP YOUR WORDS TOGETHER
+Search saved transcripts, edit text and titles, share text and export TXT files. Optionally retain the audio alongside each transcript for playback.
+
+NATIVE IPHONE INTEGRATIONS
+Use Shortcuts to transcribe a file, begin recording or open your latest transcript. A recording Live Activity displays elapsed time and a stop/save action on supported devices.
+
+ON-DEVICE PRIVACY
+Audio and transcripts are processed and stored locally. No account, ads or analytics SDKs. Session data is excluded from the app's iCloud backup; export content you want to keep elsewhere.
+
+Automatic transcription can contain errors. The model is optimized for Hebrew; other languages and number formatting may be less accurate. Mila does not summarize, identify speakers or add automatic punctuation. Keep the app open while transcribing long files. Make sure other participants know before recording them.
+
+Requires iOS 17 or later.

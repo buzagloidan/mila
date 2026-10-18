@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1DC3C15B61ED0D4D9CB32A /* TranscriptionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC960187CBF1F21CA192A35E /* TranscriptionWorker.swift */; };
+		1582635EEF1ED1E4BCA794A3 /* RecordingLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639BC031D21BBB1E37E32128 /* RecordingLiveActivity.swift */; };
+		2591B1D517E2BABA75EE0B7D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DF3372F87DE63592C2B60F /* Accelerate.framework */; };
+		274BDE61926069E59E6F4531 /* sherpa-onnx.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05D7EC07E4D12B4D2B345E5 /* sherpa-onnx.xcframework */; };
+		29C1E9251E7BA948E6ED398D /* HebrewVoiceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA679CDE9B998F57AD3A55 /* HebrewVoiceApp.swift */; };
+		3294016BF23780B162AE69AF /* SharedAudioStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB35049BEFAB6172BA70FA5 /* SharedAudioStorage.swift */; };
+		36C380ECA7554A750A7A7B42 /* RecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE75825375F6A34533CD5 /* RecorderView.swift */; };
+		3B7CC9FD0863A5200B04437E /* RecordingActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BA438F5A799CDB0B2D1665 /* RecordingActivityAttributes.swift */; };
+		50C3FCB984D5FE36E0F96DA7 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EE054D890409D98F53A3E816 /* libiconv.tbd */; };
+		52A993CA0C4F6B7C94FF9A7A /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8D85B8A3AFEC7B97385F0 /* Transcript.swift */; };
+		56C120771625673883B04AC0 /* TranscriptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF328DD669A09522B55F944 /* TranscriptDetailView.swift */; };
+		5B88B2565255EF3A385BA241 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73E84FCF2D7352BB6FDD2865 /* CoreML.framework */; };
+		5C23BE9132F2C991B75647FD /* NativeRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C58B4F463E333934DEC2666 /* NativeRecognizer.swift */; };
+		61A092EDD03AC1A4DCBA3B2D /* Licenses in Resources */ = {isa = PBXBuildFile; fileRef = 4A8239AA85AF6A82528507EC /* Licenses */; };
+		68563D641EF1F03A54711892 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F8164CB4467C50B3E07E3C /* AppServices.swift */; };
+		69E9DD4F73C880F356EAA485 /* MilaActivity.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 32B8565E822F06FE36C3E677 /* MilaActivity.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6D4345E7FE7A898A90DB96B7 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9BC441485211FAB60E000 /* AboutView.swift */; };
+		704B25F246EFE98569283890 /* RecordingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659DBC8DE68961FD04B8C0F4 /* RecordingSession.swift */; };
+		77623BACEA06456BBDED175A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6740BBE9EE36EABA1CC440AC /* Theme.swift */; };
+		78CD81C7B40C9D8F61715274 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C82C3207E89AE0DEB1CA38 /* libc++.tbd */; };
+		7F814506056BF2C95AF4E2A0 /* ReviewPromptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EA0AEBBF6712ED9F34AF3 /* ReviewPromptTests.swift */; };
+		90E175165BD010BC7A1A2646 /* StopRecordingIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BFE7547D7CFE89AEB458F /* StopRecordingIntent.swift */; };
+		960B0DEA9A79A92665ADA980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE605132F562047E36BF944B /* Assets.xcassets */; };
+		9C66336BF6969D9A07375698 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3BD33F88369FC127946ADF /* HomeView.swift */; };
+		A07582DEC726BBCD77025635 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = C2B226184390E6D7CF9C3BA9 /* Model */; };
+		ADBA2D4E5681217FA0C8682E /* TranscriptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299862EF75A1B8534F94D9D5 /* TranscriptStore.swift */; };
+		B813EB7E34F3D4D0146B254E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 67133FC55D91742C4407E530 /* PrivacyInfo.xcprivacy */; };
+		B981085675274DBDD96E9F31 /* sample-hebrew.wav in Resources */ = {isa = PBXBuildFile; fileRef = 070C0921492DE86E2FE60ED9 /* sample-hebrew.wav */; };
+		BA7B4F853B558780F5EBE7B9 /* StopRecordingIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028BFE7547D7CFE89AEB458F /* StopRecordingIntent.swift */; };
+		C51CDFB8A7CC7E22AEF64F6A /* IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B32E17532A81E5F50961A /* IntegrationTests.swift */; };
+		E121D64AFA687BFDBE6B3043 /* MilaIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0CACA984C3E4819388E46E /* MilaIntents.swift */; };
+		E47D95281CAA8FE182821448 /* HebrewVoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CA8966C535383ED06F33D /* HebrewVoiceTests.swift */; };
+		E732B09A077BDE08D6FD5343 /* MilaActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317F97676AAE1E39C9541285 /* MilaActivityBundle.swift */; };
+		F89CE4EEFE73E9BF259E0134 /* onnxruntime.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A43FB454857AA9A1A5F76E /* onnxruntime.xcframework */; };
+		FD766F2A3F465F0F8156E978 /* ReviewPromptPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE04437A884C13F4CF2C280 /* ReviewPromptPolicy.swift */; };
+		FE3ADDA25085E225E504E19B /* RecordingActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BA438F5A799CDB0B2D1665 /* RecordingActivityAttributes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DAE51F403362FE7A5E048AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4A660BF4FF7FE2565327AE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D02BFD1D176DA615C01FE6F;
+			remoteInfo = MilaActivity;
+		};
+		864070CEA5965D7AF133C30C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4A660BF4FF7FE2565327AE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799D000301F610C413811499;
+			remoteInfo = HebrewVoice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1544B62BC116B5AC5F0286A2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				69E9DD4F73C880F356EAA485 /* MilaActivity.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		028BFE7547D7CFE89AEB458F /* StopRecordingIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopRecordingIntent.swift; sourceTree = "<group>"; };
+		070C0921492DE86E2FE60ED9 /* sample-hebrew.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sample-hebrew.wav"; sourceTree = "<group>"; };
+		08B9BC441485211FAB60E000 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		0B1E2C203CB71B986A2E791F /* HebrewVoiceTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HebrewVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A43FB454857AA9A1A5F76E /* onnxruntime.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = onnxruntime.xcframework; path = Vendor/onnxruntime.xcframework; sourceTree = "<group>"; };
+		299862EF75A1B8534F94D9D5 /* TranscriptStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptStore.swift; sourceTree = "<group>"; };
+		317F97676AAE1E39C9541285 /* MilaActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilaActivityBundle.swift; sourceTree = "<group>"; };
+		32B8565E822F06FE36C3E677 /* MilaActivity.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = MilaActivity.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8239AA85AF6A82528507EC /* Licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Licenses; path = HebrewVoice/Resources/Licenses; sourceTree = SOURCE_ROOT; };
+		534EA0AEBBF6712ED9F34AF3 /* ReviewPromptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPromptTests.swift; sourceTree = "<group>"; };
+		639BC031D21BBB1E37E32128 /* RecordingLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingLiveActivity.swift; sourceTree = "<group>"; };
+		659DBC8DE68961FD04B8C0F4 /* RecordingSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSession.swift; sourceTree = "<group>"; };
+		67133FC55D91742C4407E530 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		6740BBE9EE36EABA1CC440AC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		6CF328DD669A09522B55F944 /* TranscriptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptDetailView.swift; sourceTree = "<group>"; };
+		6FE04437A884C13F4CF2C280 /* ReviewPromptPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewPromptPolicy.swift; sourceTree = "<group>"; };
+		73E84FCF2D7352BB6FDD2865 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
+		76A00AE0D7474857E490047A /* HebrewVoice.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HebrewVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		790B32E17532A81E5F50961A /* IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTests.swift; sourceTree = "<group>"; };
+		8B0CACA984C3E4819388E46E /* MilaIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilaIntents.swift; sourceTree = "<group>"; };
+		92B8D85B8A3AFEC7B97385F0 /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
+		95BA438F5A799CDB0B2D1665 /* RecordingActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingActivityAttributes.swift; sourceTree = "<group>"; };
+		9A3BD33F88369FC127946ADF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9BB35049BEFAB6172BA70FA5 /* SharedAudioStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedAudioStorage.swift; sourceTree = "<group>"; };
+		9C58B4F463E333934DEC2666 /* NativeRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeRecognizer.swift; sourceTree = "<group>"; };
+		A3DF3372F87DE63592C2B60F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A3F8164CB4467C50B3E07E3C /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		A79709B8465CD3ACD94C9551 /* HebrewVoice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HebrewVoice.entitlements; sourceTree = "<group>"; };
+		AC960187CBF1F21CA192A35E /* TranscriptionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionWorker.swift; sourceTree = "<group>"; };
+		ACDA679CDE9B998F57AD3A55 /* HebrewVoiceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HebrewVoiceApp.swift; sourceTree = "<group>"; };
+		B05D7EC07E4D12B4D2B345E5 /* sherpa-onnx.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "sherpa-onnx.xcframework"; path = "Vendor/sherpa-onnx.xcframework"; sourceTree = "<group>"; };
+		BF33B453AEC060AD1D3E0E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C2B226184390E6D7CF9C3BA9 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Model; path = HebrewVoice/Resources/Model; sourceTree = SOURCE_ROOT; };
+		CE605132F562047E36BF944B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D17FE75825375F6A34533CD5 /* RecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderView.swift; sourceTree = "<group>"; };
+		D6C82C3207E89AE0DEB1CA38 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		EE054D890409D98F53A3E816 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		F31CA8966C535383ED06F33D /* HebrewVoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HebrewVoiceTests.swift; sourceTree = "<group>"; };
+		F9B253CC9B3196CD582DD0D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B817726BAA61147F60E79044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274BDE61926069E59E6F4531 /* sherpa-onnx.xcframework in Frameworks */,
+				F89CE4EEFE73E9BF259E0134 /* onnxruntime.xcframework in Frameworks */,
+				78CD81C7B40C9D8F61715274 /* libc++.tbd in Frameworks */,
+				50C3FCB984D5FE36E0F96DA7 /* libiconv.tbd in Frameworks */,
+				2591B1D517E2BABA75EE0B7D /* Accelerate.framework in Frameworks */,
+				5B88B2565255EF3A385BA241 /* CoreML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		288E49671E1740AE5A89C33C /* HebrewVoice */ = {
+			isa = PBXGroup;
+			children = (
+				A79709B8465CD3ACD94C9551 /* HebrewVoice.entitlements */,
+				ACDA679CDE9B998F57AD3A55 /* HebrewVoiceApp.swift */,
+				BF33B453AEC060AD1D3E0E63 /* Info.plist */,
+				29924B4314D5F63B283AC8C0 /* Intents */,
+				551D2E49893D84EFBE2A535E /* Models */,
+				28E48A8DA68D0F8980200F88 /* Services */,
+				50915EF626A30429C3AE2600 /* Views */,
+			);
+			path = HebrewVoice;
+			sourceTree = "<group>";
+		};
+		28E48A8DA68D0F8980200F88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A3F8164CB4467C50B3E07E3C /* AppServices.swift */,
+				9C58B4F463E333934DEC2666 /* NativeRecognizer.swift */,
+				639BC031D21BBB1E37E32128 /* RecordingLiveActivity.swift */,
+				659DBC8DE68961FD04B8C0F4 /* RecordingSession.swift */,
+				6FE04437A884C13F4CF2C280 /* ReviewPromptPolicy.swift */,
+				AC960187CBF1F21CA192A35E /* TranscriptionWorker.swift */,
+				299862EF75A1B8534F94D9D5 /* TranscriptStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		29924B4314D5F63B283AC8C0 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				8B0CACA984C3E4819388E46E /* MilaIntents.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		431DB6F9DCF5A6C2D8B1CAD2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE605132F562047E36BF944B /* Assets.xcassets */,
+				67133FC55D91742C4407E530 /* PrivacyInfo.xcprivacy */,
+				070C0921492DE86E2FE60ED9 /* sample-hebrew.wav */,
+			);
+			name = Resources;
+			path = HebrewVoice/Resources;
+			sourceTree = "<group>";
+		};
+		50915EF626A30429C3AE2600 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				08B9BC441485211FAB60E000 /* AboutView.swift */,
+				9A3BD33F88369FC127946ADF /* HomeView.swift */,
+				D17FE75825375F6A34533CD5 /* RecorderView.swift */,
+				6740BBE9EE36EABA1CC440AC /* Theme.swift */,
+				6CF328DD669A09522B55F944 /* TranscriptDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		551D2E49893D84EFBE2A535E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92B8D85B8A3AFEC7B97385F0 /* Transcript.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A59BE54BA580FA2BC2FE4112 = {
+			isa = PBXGroup;
+			children = (
+				4A8239AA85AF6A82528507EC /* Licenses */,
+				C2B226184390E6D7CF9C3BA9 /* Model */,
+				288E49671E1740AE5A89C33C /* HebrewVoice */,
+				F62C903A4A025F2F7D85A3BD /* HebrewVoiceTests */,
+				C630E878675864C1D26039C2 /* MilaActivity */,
+				431DB6F9DCF5A6C2D8B1CAD2 /* Resources */,
+				FA0CEA60123AC23E359212FA /* Shared */,
+				A9BA34080618C0B8ABC910ED /* Frameworks */,
+				F80F9077AD8962229869DD3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9BA34080618C0B8ABC910ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3DF3372F87DE63592C2B60F /* Accelerate.framework */,
+				73E84FCF2D7352BB6FDD2865 /* CoreML.framework */,
+				D6C82C3207E89AE0DEB1CA38 /* libc++.tbd */,
+				EE054D890409D98F53A3E816 /* libiconv.tbd */,
+				11A43FB454857AA9A1A5F76E /* onnxruntime.xcframework */,
+				B05D7EC07E4D12B4D2B345E5 /* sherpa-onnx.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C630E878675864C1D26039C2 /* MilaActivity */ = {
+			isa = PBXGroup;
+			children = (
+				F9B253CC9B3196CD582DD0D4 /* Info.plist */,
+				317F97676AAE1E39C9541285 /* MilaActivityBundle.swift */,
+			);
+			path = MilaActivity;
+			sourceTree = "<group>";
+		};
+		F62C903A4A025F2F7D85A3BD /* HebrewVoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				F31CA8966C535383ED06F33D /* HebrewVoiceTests.swift */,
+				790B32E17532A81E5F50961A /* IntegrationTests.swift */,
+				534EA0AEBBF6712ED9F34AF3 /* ReviewPromptTests.swift */,
+			);
+			path = HebrewVoiceTests;
+			sourceTree = "<group>";
+		};
+		F80F9077AD8962229869DD3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76A00AE0D7474857E490047A /* HebrewVoice.app */,
+				0B1E2C203CB71B986A2E791F /* HebrewVoiceTests.xctest */,
+				32B8565E822F06FE36C3E677 /* MilaActivity.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA0CEA60123AC23E359212FA /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				95BA438F5A799CDB0B2D1665 /* RecordingActivityAttributes.swift */,
+				9BB35049BEFAB6172BA70FA5 /* SharedAudioStorage.swift */,
+				028BFE7547D7CFE89AEB458F /* StopRecordingIntent.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D02BFD1D176DA615C01FE6F /* MilaActivity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BA6D87A01E123DD5768B3DF /* Build configuration list for PBXNativeTarget "MilaActivity" */;
+			buildPhases = (
+				878664FC919D2FCDDF25B9FD /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MilaActivity;
+			packageProductDependencies = (
+			);
+			productName = MilaActivity;
+			productReference = 32B8565E822F06FE36C3E677 /* MilaActivity.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4507274B7A43388456383312 /* HebrewVoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E97C271B11BFF5AAF1329C6 /* Build configuration list for PBXNativeTarget "HebrewVoiceTests" */;
+			buildPhases = (
+				F9722B8BB18822472F91ECF3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D2141913D3F48261D95FD3B /* PBXTargetDependency */,
+			);
+			name = HebrewVoiceTests;
+			packageProductDependencies = (
+			);
+			productName = HebrewVoiceTests;
+			productReference = 0B1E2C203CB71B986A2E791F /* HebrewVoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		799D000301F610C413811499 /* HebrewVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29BE41F74FF4CB50EAC1BB06 /* Build configuration list for PBXNativeTarget "HebrewVoice" */;
+			buildPhases = (
+				FB820321377F30D345AACCF5 /* Sources */,
+				73852DFCBFD5C967F45C2FC8 /* Resources */,
+				B817726BAA61147F60E79044 /* Frameworks */,
+				1544B62BC116B5AC5F0286A2 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				134FE99D18CEC2E7418FA85A /* PBXTargetDependency */,
+			);
+			name = HebrewVoice;
+			packageProductDependencies = (
+			);
+			productName = HebrewVoice;
+			productReference = 76A00AE0D7474857E490047A /* HebrewVoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4A660BF4FF7FE2565327AE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1D02BFD1D176DA615C01FE6F = {
+						DevelopmentTeam = ZADSZ6HP53;
+						ProvisioningStyle = Automatic;
+					};
+					4507274B7A43388456383312 = {
+						DevelopmentTeam = ZADSZ6HP53;
+						ProvisioningStyle = Automatic;
+					};
+					799D000301F610C413811499 = {
+						DevelopmentTeam = ZADSZ6HP53;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B751C8A6BCD8D769099A4F56 /* Build configuration list for PBXProject "HebrewVoice" */;
+			developmentRegion = he;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				he,
+			);
+			mainGroup = A59BE54BA580FA2BC2FE4112;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F80F9077AD8962229869DD3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				799D000301F610C413811499 /* HebrewVoice */,
+				4507274B7A43388456383312 /* HebrewVoiceTests */,
+				1D02BFD1D176DA615C01FE6F /* MilaActivity */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73852DFCBFD5C967F45C2FC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				960B0DEA9A79A92665ADA980 /* Assets.xcassets in Resources */,
+				61A092EDD03AC1A4DCBA3B2D /* Licenses in Resources */,
+				A07582DEC726BBCD77025635 /* Model in Resources */,
+				B813EB7E34F3D4D0146B254E /* PrivacyInfo.xcprivacy in Resources */,
+				B981085675274DBDD96E9F31 /* sample-hebrew.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		878664FC919D2FCDDF25B9FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E732B09A077BDE08D6FD5343 /* MilaActivityBundle.swift in Sources */,
+				FE3ADDA25085E225E504E19B /* RecordingActivityAttributes.swift in Sources */,
+				BA7B4F853B558780F5EBE7B9 /* StopRecordingIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9722B8BB18822472F91ECF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47D95281CAA8FE182821448 /* HebrewVoiceTests.swift in Sources */,
+				C51CDFB8A7CC7E22AEF64F6A /* IntegrationTests.swift in Sources */,
+				7F814506056BF2C95AF4E2A0 /* ReviewPromptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB820321377F30D345AACCF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D4345E7FE7A898A90DB96B7 /* AboutView.swift in Sources */,
+				68563D641EF1F03A54711892 /* AppServices.swift in Sources */,
+				29C1E9251E7BA948E6ED398D /* HebrewVoiceApp.swift in Sources */,
+				9C66336BF6969D9A07375698 /* HomeView.swift in Sources */,
+				E121D64AFA687BFDBE6B3043 /* MilaIntents.swift in Sources */,
+				5C23BE9132F2C991B75647FD /* NativeRecognizer.swift in Sources */,
+				36C380ECA7554A750A7A7B42 /* RecorderView.swift in Sources */,
+				3B7CC9FD0863A5200B04437E /* RecordingActivityAttributes.swift in Sources */,
+				1582635EEF1ED1E4BCA794A3 /* RecordingLiveActivity.swift in Sources */,
+				704B25F246EFE98569283890 /* RecordingSession.swift in Sources */,
+				FD766F2A3F465F0F8156E978 /* ReviewPromptPolicy.swift in Sources */,
+				3294016BF23780B162AE69AF /* SharedAudioStorage.swift in Sources */,
+				90E175165BD010BC7A1A2646 /* StopRecordingIntent.swift in Sources */,
+				77623BACEA06456BBDED175A /* Theme.swift in Sources */,
+				52A993CA0C4F6B7C94FF9A7A /* Transcript.swift in Sources */,
+				56C120771625673883B04AC0 /* TranscriptDetailView.swift in Sources */,
+				ADBA2D4E5681217FA0C8682E /* TranscriptStore.swift in Sources */,
+				0A1DC3C15B61ED0D4D9CB32A /* TranscriptionWorker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		134FE99D18CEC2E7418FA85A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D02BFD1D176DA615C01FE6F /* MilaActivity */;
+			targetProxy = 5DAE51F403362FE7A5E048AF /* PBXContainerItemProxy */;
+		};
+		8D2141913D3F48261D95FD3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799D000301F610C413811499 /* HebrewVoice */;
+			targetProxy = 864070CEA5965D7AF133C30C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16148EA67989766B81933959 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HebrewVoice/HebrewVoice.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Vendor\"",
+				);
+				INFOPLIST_FILE = HebrewVoice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebrewvoice.mila;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) MILA_APP";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2622AF9CD0C15C6331853806 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = ZADSZ6HP53;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A2E3827367F2246BEC77177 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HebrewVoice/HebrewVoice.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"Vendor\"",
+				);
+				INFOPLIST_FILE = HebrewVoice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebrewvoice.mila;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) MILA_APP";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40DF0C545C0D4F71080B4D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebrewvoice.HebrewVoiceTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HebrewVoice.app/HebrewVoice";
+			};
+			name = Release;
+		};
+		78E8E71F16DDB300ED5FCC8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				INFOPLIST_FILE = MilaActivity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebrewvoice.mila.activity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A5CC7E1F19991E5E9699E93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = ZADSZ6HP53;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		85F52553FDA8C6F8FF60C54D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebrewvoice.HebrewVoiceTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HebrewVoice.app/HebrewVoice";
+			};
+			name = Debug;
+		};
+		E473E18AF386BCF2489C3ED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 2;
+				INFOPLIST_FILE = MilaActivity/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hebrewvoice.mila.activity;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29BE41F74FF4CB50EAC1BB06 /* Build configuration list for PBXNativeTarget "HebrewVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16148EA67989766B81933959 /* Debug */,
+				2A2E3827367F2246BEC77177 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8BA6D87A01E123DD5768B3DF /* Build configuration list for PBXNativeTarget "MilaActivity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E8E71F16DDB300ED5FCC8A /* Debug */,
+				E473E18AF386BCF2489C3ED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8E97C271B11BFF5AAF1329C6 /* Build configuration list for PBXNativeTarget "HebrewVoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85F52553FDA8C6F8FF60C54D /* Debug */,
+				40DF0C545C0D4F71080B4D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B751C8A6BCD8D769099A4F56 /* Build configuration list for PBXProject "HebrewVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2622AF9CD0C15C6331853806 /* Debug */,
+				7A5CC7E1F19991E5E9699E93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4A660BF4FF7FE2565327AE9 /* Project object */;
+}

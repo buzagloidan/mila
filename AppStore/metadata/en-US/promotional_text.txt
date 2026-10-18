@@ -1,0 +1,1 @@
+Record or open an audio file and turn Hebrew speech into text on your device. The model is included, with no account or additional model download.
